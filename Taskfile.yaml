@@ -35,7 +35,7 @@ tasks:
     desc: Generate note api
     cmds:
 #      - ./bin/protoc --go_out=. --go_opt=module=github.com/jumaniyozov/goerpc --plugin=protoc-gen-go=bin/protoc-gen-go --plugin=protoc-gen-go=bin/protoc-gen-go --go-grpc_out=. --go-grpc_opt=module=github.com/jumaniyozov/goerpc --plugin=protoc-gen-go-grpc=bin/protoc-gen-go-grpc --validate_out="lang=go,paths=source_relative:proto" proto/todo/v2/*.proto
-      - PWD={{.CURRENT_DIR}} protoc  -I ./proto --go_out ./proto/golang --go_opt paths=source_relative --plugin=protoc-gen-go=bin/protoc-gen-go --go-grpc_out ./proto/golang --plugin=protoc-gen-go-grpc=bin/protoc-gen-go-grpc --go-grpc_opt paths=source_relative ./proto/order/v1/order.proto
+      - PWD={{.CURRENT_DIR}} protoc  -I ./ordc-proto --go_out ./ordc-proto/golang --go_opt paths=source_relative --plugin=protoc-gen-go=bin/protoc-gen-go --go-grpc_out ./ordc-proto/golang --plugin=protoc-gen-go-grpc=bin/protoc-gen-go-grpc --go-grpc_opt paths=source_relative ./ordc-proto/order/v1/order.proto
 
 
 
