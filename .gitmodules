@@ -1,0 +1,3 @@
+[submodule "ordc-proto"]
+	path = ordc-proto
+	url = https://github.com/Jumaniyozov/ordc-proto
